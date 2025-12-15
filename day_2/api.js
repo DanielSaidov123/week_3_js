@@ -1,4 +1,4 @@
-const url = "https://swapi.dev/api/";
+ const url = "https://swapi.dev/api/";
 async function fetchData() {
   try {
     const response = await fetch(url);
