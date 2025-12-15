@@ -66,4 +66,17 @@ function readerFile(Path) {
     }
   });
 }
-readerFile('ff/dd.txt')
+
+
+
+function fetchUser(userID,callback){
+    setTimeout(()=>{
+        const user={id:userID,name:'daniel',email: "ddny2263@come.gmail"}
+        callback(user)
+    })
+ } 
+
+ fetchUser(1,(user)=>{
+    console.log('User featcher',user);
+    
+ })
